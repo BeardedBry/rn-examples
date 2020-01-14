@@ -8,10 +8,16 @@ const SquareScreen = () => {
     const [green, setGreen] = useState(0);
     const [blue, setBlue] = useState(0);
 
+    console.log(red);
+
     return (
         <View>
             <Text>Square Screen</Text>
-            <ColorCounter color="Red" />
+            <ColorCounter 
+                onIncrease={()=>setRed(red + 1)} 
+                onDecrease={()=>setRed(red - 1)} 
+                color="Red" 
+            />
             <ColorCounter color="Blue" />
             <ColorCounter color="Green" />
         </View>
