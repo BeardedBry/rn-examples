@@ -10,12 +10,17 @@ run 'npm install' or 'yarn install'
 
 ### then for ios: 
 
+Prerequisites:
+    - xcode 
+    - CocoaPods
+
 cd in ios directory
 
-run 'pod install' ( you will need to have CocoaPods installed on your system)
+run 'pod install' ( This will take a while )
 
 cd back into project directory
 
 run 'react-native start'
 
-once the Metro loader is running, run 'react-native run-ios'
+once the Metro loader is running, 
+in another terminal, cd into the directory and run 'react-native run-ios'
