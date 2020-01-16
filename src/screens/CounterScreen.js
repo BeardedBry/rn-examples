@@ -8,7 +8,9 @@ const CounterScreen = () =>{
     return (
         <View>
             <Button title="Increase" onPress={ () => {
-                setCounter(counter + 1); //Async
+                setCounter(counter + 1); 
+                console.log(counter); 
+                //State changes are always asynchronous. an immidiate console.log(counter) may not show the state change.
             }}/>
             <Button title="Decrease" onPress={()=>{
                 setCounter(counter - 1);
