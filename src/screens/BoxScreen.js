@@ -7,15 +7,18 @@ const BoxScreen = () =>{
             <Text style={styles.textOneStyle}>Child #1</Text>
             <Text style={styles.textTwoStyle}>Child #2</Text>
             <Text style={styles.textThreeStyle}>Child #3</Text>
+            <Text style={styles.textFourStyle}>Child #4</Text>
         </View>
     )
 };
 
 const styles = StyleSheet.create({
     viewStyle: {
+        position: 'absolute',
+        ...StyleSheet.absoluteFillObject, // left: 0, top: 0, right: 0, bottom: 0
         borderWidth: 3,
         borderColor: 'black',
-        height: 200,
+        alignItems: 'stretch'
     },
     textOneStyle: {
         borderWidth: 3,
@@ -29,6 +32,14 @@ const styles = StyleSheet.create({
         flex: 4
     },
     textThreeStyle: {
+        borderWidth: 3,
+        borderColor: 'red',
+        flex: 2
+    },
+    textFourStyle: {
+        position: 'absolute', // absolute ignores siblings, but positions relative to parent with some flex-box properties
+        bottom: 0,
+        right: 0,
         borderWidth: 3,
         borderColor: 'red',
         flex: 2
