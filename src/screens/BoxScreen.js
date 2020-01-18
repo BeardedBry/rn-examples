@@ -4,37 +4,42 @@ import { View, Text, StyleSheet} from 'react-native';
 const BoxScreen = () =>{
     return (
         <View style={styles.viewStyle}>
-            <Text style={styles.textOneStyle}>Child #1</Text>
-            <Text style={styles.textTwoStyle}>Child #2</Text>
-            <Text style={styles.textThreeStyle}>Child #3</Text>
-            <Text style={styles.textFourStyle}>Child #4</Text>
+            <View style={styles.textOneStyle}></View>
+            <View style={styles.textTwoStyle}></View>
+            <View style={styles.textThreeStyle}></View>
         </View>
     )
 };
 
 const styles = StyleSheet.create({
     viewStyle: {
-        position: 'absolute',
-        ...StyleSheet.absoluteFillObject, // left: 0, top: 0, right: 0, bottom: 0
-        borderWidth: 3,
-        borderColor: 'black',
-        alignItems: 'stretch'
+        left: 0,
+        right: 0,
+        height: 150
     },
     textOneStyle: {
-        borderWidth: 3,
-        borderColor: 'red',
-        flex: 4
+        alignSelf: 'flex-start',
+        height: 75,
+        width: 100,
+        borderWidth: 1,
+        backgroundColor: 'red',
     },
     textTwoStyle: {
-        borderWidth: 3,
-        borderColor: 'red',
-        alignSelf: 'flex-end', //defualt 'stretch'
-        flex: 4
+        position: 'absolute',
+        alignSelf: 'center',
+        bottom: 0,
+        height: 75,
+        width: 100,
+        borderWidth: 1,
+        backgroundColor: 'green'
     },
     textThreeStyle: {
-        borderWidth: 3,
-        borderColor: 'red',
-        flex: 2
+        position: 'absolute',
+        right: 0,
+        height: 75,
+        width: 100,
+        borderWidth: 1,
+        backgroundColor: 'purple'
     },
     textFourStyle: {
         position: 'absolute', // absolute ignores siblings, but positions relative to parent with some flex-box properties
