@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
-import { ScaleFromCenterAndroid } from 'react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/TransitionPresets';
 
 const BoxScreen = () =>{
     return (

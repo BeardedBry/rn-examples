@@ -8,7 +8,8 @@ cd into the directory
 
 run 'npm install' or 'yarn install'
 
-### then for ios: 
+### then
+### for ios on mac: 
 
 Prerequisites:
     - xcode 
@@ -24,3 +25,13 @@ run 'react-native start'
 
 once the Metro loader is running, 
 in another terminal, cd into the directory and run 'react-native run-ios'
+
+### for android on windows:
+
+Prerequisites:
+    - Android Studio
+
+Start an android emulator
+
+In the rn-examples folder run 'npx react-native run-android'
+
