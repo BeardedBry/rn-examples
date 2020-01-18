@@ -13,33 +13,31 @@ const BoxScreen = () =>{
 
 const styles = StyleSheet.create({
     viewStyle: {
-        left: 0,
         right: 0,
-        height: 150
+        left: 0,
+        height: 150,
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        backgroundColor: 'grey'
     },
     textOneStyle: {
-        alignSelf: 'flex-start',
         height: 75,
         width: 100,
         borderWidth: 1,
         backgroundColor: 'red',
     },
     textTwoStyle: {
-        position: 'absolute',
-        alignSelf: 'center',
-        bottom: 0,
         height: 75,
         width: 100,
+        marginTop: 75,
         borderWidth: 1,
         backgroundColor: 'green'
     },
     textThreeStyle: {
-        position: 'absolute',
-        right: 0,
         height: 75,
         width: 100,
         borderWidth: 1,
-        backgroundColor: 'purple'
+        backgroundColor: 'purple',
     },
     textFourStyle: {
         position: 'absolute', // absolute ignores siblings, but positions relative to parent with some flex-box properties
