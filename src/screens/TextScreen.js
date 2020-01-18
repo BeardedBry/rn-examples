@@ -17,7 +17,7 @@ const TextScreen = () =>{
                     return setPass(input);
                 }}
             />
-            {pass.length < 5 && pass.length > 0 ? <Text>Error, password must be atleast 5 characters</Text> : null }
+            {pass.length < 4 && pass.length > 0 ? <Text>Error, password must be atleast 4 characters</Text> : null }
         </View>
     );
 };
