@@ -11,7 +11,7 @@ run 'npm install' or 'yarn install'
 ### then
 ### for ios on mac: 
 
-Prerequisites:
+Dependencies:
     - xcode 
     - CocoaPods
 
@@ -28,7 +28,7 @@ in another terminal, cd into the directory and run 'react-native run-ios'
 
 ### for android on windows:
 
-Prerequisites:
+Dependencies:
     - Android Studio
 
 Start an android emulator
